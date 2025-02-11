@@ -59,6 +59,12 @@ Components
 
 /* -------- Header -------- */
 
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 header ul{
   display: flex;
   justify-content: flex-end;
@@ -86,17 +92,27 @@ nav a:hover{
   color: #ffffff;
 }
 
+h1{
+  font-family: "Dosis", serif;
+  font-size: 43.34px;
+  font-weight: bold;
+}
+
 /* -------- Section Héro -------- */
 
 .héro{
   background-image: url(../images/montagnes.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
+  background-color: #E3E4E4;
+  height: 450px;
 }
 
 .boîte{
   background-color: rgba(0, 0, 0, 0.7);
-  
+  border-radius: 10px;
+  max-width: 455px;
+  align-items: center;
 }
 
 h2{
@@ -104,12 +120,13 @@ h2{
   font-family: "Dosis", serif;
   font-size: 36px;
   font-weight: bold;
+  text-align: center;
 }
 
 .héro p{
   color: #2FCB47;
   font-size: 20px;
-  
+  text-align: center;
 }
 
 /* -------- Section Contenu -------- */
@@ -122,16 +139,43 @@ h2{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+  
 }
 
 article{
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
+  border-bottom: 5px solid #0E5EA1;
+
+  padding: 10px;
 }
 
 h3{
   font-family: "Dosis", serif;
   font-size: 24px;
   font-weight: bold;
+}
+
+article p{
+  line-height: 160%;
+}
+
+article a{
+  background-color: #B7B7B7;
+  padding: 10px 45px 10px 45px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000000;
+  font-size: bold;
+
+  align-self: center;
+  margin-top: auto;
+}
+
+article a:hover{
+  color: #ffffff;
+  background-color: #0E5EA1;
 }
 
 .couple{
