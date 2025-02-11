@@ -13,13 +13,144 @@
 // <weight>: Use a value from 100 to 900
 // <uniquifier>: Use a unique and descriptive class name
 
-.roboto-<uniquifier> {
-  font-family: "Roboto", serif;
+.dosis-<uniquifier> {
+  font-family: "Dosis", serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
 }
 
+
 */
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------
+Generic
+------------------------------------------------------------------------------------------------------------------------------------------ */
+
+html{
+  box-sizing: border-box;
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------
+Base
+------------------------------------------------------------------------------------------------------------------------------------------ */
+
+body{
+  font-family: "Roboto", serif;
+  font-size: 16px;
+
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------
+Components
+------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* -------- Header -------- */
+
+header ul{
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+nav li{
+  list-style: none;
+}
+
+nav a{
+  color: #000000;
+  font-family: "Dosis", serif;
+  font-size: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #ffffff;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+
+nav a:hover{
+  background-color: #0E5EA1;
+  color: #ffffff;
+}
+
+/* -------- Section Héro -------- */
+
+.héro{
+  background-image: url(../images/montagnes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.boîte{
+  background-color: rgba(0, 0, 0, 0.7);
+  
+}
+
+h2{
+  color: #ffffff;
+  font-family: "Dosis", serif;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.héro p{
+  color: #2FCB47;
+  font-size: 20px;
+  
+}
+
+/* -------- Section Contenu -------- */
+
+.contenu{
+  background-color: #E3E4E4;
+}
+
+.conteneur{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+article{
+  background-color: #ffffff;
+}
+
+h3{
+  font-family: "Dosis", serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.couple{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* -------- Footer -------- */
+
+footer{
+  background-color: #000000;
+  
+}
+
+footer p{
+  color: #ffffff;
+  text-align: center;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin: 0;
+}
